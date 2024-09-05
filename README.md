@@ -39,8 +39,8 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL: [click here]()
-- Live Site URL: [click here]()
+- Solution URL: [click here](https://github.com/elasri21/maker_pre_launch_landing_page)
+- Live Site URL: [click here](https://elasri21.github.io/maker_pre_launch_landing_page/)
 
 ### Built with
 
