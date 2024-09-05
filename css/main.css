@@ -335,4 +335,21 @@ main .container .contact form .error p {
   color: #ff2965;
 }
 
+footer {
+  padding: 30px 0;
+  font-size: 1rem;
+  font-weight: 300px;
+  text-align: center;
+  color: #767f98;
+}
+footer a {
+  font-weight: 600;
+  color: #3eeae7;
+  transition: .3s linear;
+}
+footer a:hover {
+  text-decoration: underline;
+  color: #093e67;
+}
+
 /*# sourceMappingURL=main.css.map */

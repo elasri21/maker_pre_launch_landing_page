@@ -303,3 +303,20 @@ main {
         }
     }
 }
+
+footer {
+    padding: 30px 0;
+    font-size: 1rem;
+    font-weight: 300px;
+    text-align: center;
+    color: $gray;
+    a {
+        font-weight: 600;
+        color: $light-blue;
+        transition: .3s linear;
+        &:hover {
+            text-decoration: underline;
+            color: $dark-blue;
+        }
+    }
+}
