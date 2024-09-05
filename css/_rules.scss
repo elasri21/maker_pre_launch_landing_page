@@ -1,0 +1,305 @@
+header {
+    @media (min-width: 768px) {
+        background-image: url("../assets/illustration-hero-left.svg"), url("../assets/bg-hero-squiggle.svg"), url("../assets/illustration-hero-right.svg") !important;
+        background-position: center left, center center, center right;
+    }
+    @media (max-width: 767px) {
+        .container {
+            .intro {
+                width: 100% !important;
+            }
+        }
+    }
+    background-image: url("../assets/illustration-hero-mobile.png");
+    background-repeat: no-repeat;
+    padding: 20px 0;
+    .container {
+        min-height: 100vh;
+        position: relative;
+        .intro {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            min-width: 350px;
+            h1 {
+                font-size: 2.5rem;
+                text-transform: capitalize;
+                font-weight: 700;
+                color: $white;
+                margin-bottom: 15px;
+            }
+            p {
+                font-size: 1rem;
+                font-weight: 300;
+                color: $gray;
+                line-height: 1.4rem;
+            }
+            .icon {
+                width: 20px;
+                height: 40px;
+                border: 2px solid $light-blue;
+                border-radius: 6px;
+                position: relative;
+                margin: 20px auto;
+                .dot {
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 50%;
+                    background-color: $light-blue;
+                    position: absolute;
+                    top: 6px;
+                    left: 6px;
+                }
+            }
+        }
+    }
+}
+
+main {
+    .container {
+        .boxes {
+            @media (min-width: 1200px) {
+                .box {
+                    width: calc(25% - 22.5px) !important;
+                    &.mt {
+                        margin-top: 30px;
+                    }
+                }
+            }
+            @media (min-width: 768px) and (max-width: 1199px) {
+                .box {
+                    width: calc(50% - 15px) !important;
+                }
+            }
+            padding: 50px 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            .box {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                .icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 4px;
+                    background-color: $dark-blue;
+                    img {
+                        display: block;
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+                h3 {
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    color: $white;
+                    text-transform: capitalize;
+                }
+                p {
+                    font-size: .9rem;
+                    font-weight: 300;
+                    color: $gray;
+                    line-height: 1.2rem;
+                }
+            }
+        }
+        .pricing {
+            padding: 50px 0;
+            h2 {
+                font-size: 2.2rem;
+                text-transform: capitalize;
+                color: $white;
+                font-weight: 700;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            & > p {
+                font-size: .9rem;
+                font-weight: 300;
+                color: $gray;
+                line-height: 1.3rem;
+                text-align: center;
+                margin: 0 auto;
+                max-width: 500px;
+            }
+            .prices {
+                @media (min-width: 768px) {
+                    .price {
+                        width: calc(50% - 20px) !important;
+                    }
+                }
+                display: flex;
+                gap: 80px 40px;
+                flex-wrap: wrap;
+                margin-top: 80px;// get to here
+                .price {
+                    width: 100%;
+                    position: relative;
+                    padding: 0 20px 20px 20px;
+                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    .icon {
+                        margin-top: -30px;
+                        width: 60px;
+                        height: 60px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    h3 {
+                        font-size: 1.4rem;
+                        font-weight: 600;
+                        text-transform: capitalize;
+                    }
+                    p {
+                        font-size: .9rem;
+                        font-weight: 300;
+                        line-height: 1.3rem;
+                        text-align: left;
+                    }
+                    h4 {
+                        font-size: 2rem;
+                        font-weight: 700;
+                        text-transform: capitalize;
+                        small {
+                            font-size: 1.2rem;
+                            font-weight: 300;
+                            color: $very-dark-blue;
+                        }
+                    }
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+                        li {
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            img {
+                                vertical-align: middle;
+                            }
+                            i {
+                                font-size: 1.1rem;
+                            }
+                            span {
+                                font-size: .9rem;
+                                font-weight: 300;
+                            }
+                        }
+                    }
+                    &.free {
+                        background-color: $dark-blue;
+                        h3, p, h4, ul li span {
+                            color: $white;
+                        }
+                        ul {
+                            li {
+                                i {
+                                    color: $light-blue;
+                                }
+                            }
+                        }
+                    }
+                    &.paid {
+                        background-color: $light-blue;
+                        h3, p, h4, ul li span {
+                            color: $very-dark-blue
+                        }
+                        ul {
+                            li {
+                                i {
+                                    color: $very-dark-blue;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contact {
+            padding: 50px 0;
+            h2 {
+                font-size: 2rem;
+                font-weight: 600;
+                color: $white;
+                text-transform: capitalize;
+                text-align: center;
+            }
+            form {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                max-width: 650px;
+                gap: 15px;
+                margin: 30px auto 0;
+                @media (min-width: 768px) {
+                    input {
+                        &#email {
+                            flex: 1;
+                        }
+                        &#submit {
+                            width: fit-content !important;
+                        }
+                    }
+                }
+                input {
+                    display: block;
+                    width: 100%;
+                    border-radius: 30px;
+                    padding: 15px 20px;
+                    font-size: 1.1rem;
+                    border: 2px solid transparent;
+                    &#email {
+                        background-color: $dark-blue;
+                        caret-color: $light-blue;
+                        color: $light-blue;
+                        &::placeholder {
+                            transition: .3s linear;
+                            color: $gray;
+                        }
+                        &:focus {
+                            border-color: $light-blue;
+                            &::placeholder {
+                                opacity: 0;
+                            }
+                        }
+                    }
+                    &#submit {
+                        background-color: $light-blue;
+                        color: $dark-blue;
+                        text-transform: capitalize;
+                        font-weight: 600;
+                        text-align: center;
+                        cursor: pointer;
+                        border-color: $light-blue;
+                        &:hover {
+                            background-color: $very-dark-blue;
+                            color: $white;
+                        }
+                    }
+                }
+                .error {
+                    width: 100%;
+                    margin-left: 20px;
+                    p {
+                        font-size: .7rem;
+                        font-weight: 300;
+                        color: $error-red;
+                    }
+                }
+            }
+        }
+    }
+}
